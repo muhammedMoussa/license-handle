@@ -8,6 +8,9 @@ exports.handler = async () => {
    
     return {
       statusCode: 200,
-      body: JSON.stringify({ data: 'data' })
+      body: JSON.stringify({ data: 'data' }),
+      headers: {
+        "access-control-allow-origin": "*"
+      }
     };
   };
